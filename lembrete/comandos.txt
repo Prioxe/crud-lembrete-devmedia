@@ -1,2 +1,12 @@
 ***Criando o projeto***
 react-native init lembrete
+
+
+***Ativando o emulador***
+
+emulator -no-snapshot -avd Nexus_5X_API_28  (Nexus... e o nome do aparalho)
+
+
+
+***Dando um run no projeto***
+react-native run-android

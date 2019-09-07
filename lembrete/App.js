@@ -9,6 +9,18 @@
 
 
   export default class App extends Component {
+
+    state = {
+      lembretes: []
+    }
+
+    componentDidMount(){
+      fetch('https://deviup.com.br:3001/api/lembrete', {method: 'GET'})
+        .then(T => T.json())
+        .then(lembretes => this.setState({ lembretes }))
+    }
+
+
     render() {
       return (
         <View >
